@@ -1,0 +1,5 @@
+Android
+=======
+
+practices in android
+
