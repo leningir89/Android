@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/txtvOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:paddingTop="45dp"
+        android:text="@string/opciones" />
+
+    <Spinner
+        android:id="@+id/spnNivel"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dip"
+        android:entries="@array/os_arrays"
+        android:prompt="@string/opciones" />
+
+    <TextView
+        android:id="@+id/txtvCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:paddingTop="25dp"
+        android:text="@string/categoria" />
+
+    <RadioGroup
+        android:id="@+id/groupCategoria"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="90dip"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rdb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/varios" />
+
+        <RadioButton
+            android:id="@+id/rdb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frutas" />
+
+            </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dip"
+        android:layout_marginTop="15dp"
+        android:maxHeight="@dimen/abc_action_bar_title_text_size"
+        android:minHeight="48dip"
+        android:text="@string/siguiente"
+        android:textSize="@dimen/abc_action_bar_title_text_size"
+        android:textStyle="normal"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dip"     
+        android:maxHeight="@dimen/abc_action_bar_title_text_size"
+        android:minHeight="48dip"
+        android:text="@string/salir"
+        android:textSize="@dimen/abc_action_bar_title_text_size"
+        android:textStyle="normal"
+        android:typeface="serif" />
+
+</LinearLayout>
